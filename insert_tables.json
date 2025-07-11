@@ -1,0 +1,55 @@
+{
+  "Alunos": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id_aluno": {"S": "A001"},
+          "nome": {"S": "João Silva"},
+          "data_nascimento": {"S": "2000-05-15"},
+          "email": {"S": "joao.silva@email.com"}
+        }
+      }
+    }
+  ],
+  
+  "Professores": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id_professor": {"S": "P001"},
+          "nome": {"S": "Dra. Ana Costa"},
+          "especialidade": {"S": "Matemática"},
+          "email": {"S": "ana.costa@email.com"}
+        }
+      }
+    }
+  ],
+
+  "Disciplinas": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id_disciplina": {"S": "D001"},
+          "nome": {"S": "Cálculo I"},
+          "carga_horaria": {"N": "60"},
+          "id_professor": {"S": "P001"}
+        }
+      }
+    }
+  ],
+
+  "Matriculas": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id_matricula": {"S": "M001"},
+          "id_aluno": {"S": "A001"},
+          "id_disciplina": {"S": "D001"},
+          "ano": {"N": "2024"},
+          "semestre": {"N": "1"}
+        }
+      }
+    }
+  ]
+
+}
